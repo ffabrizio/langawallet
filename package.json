@@ -1,0 +1,23 @@
+{
+  "name": "langawallet",
+  "version": "1.0.0",
+  "description": "A specialized Ethereum wallet for langa tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffabrizio/langawallet.git"
+  },
+  "keywords": [
+    "ethereum",
+    "dapps"
+  ],
+  "author": "ffabrizio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ffabrizio/langawallet/issues"
+  },
+  "homepage": "https://github.com/ffabrizio/langawallet#readme"
+}
