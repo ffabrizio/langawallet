@@ -1,4 +1,5 @@
 /* global __dirname */
+
 module.exports = {
     entry: "./app/index.js",
     output: {
@@ -7,7 +8,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" }
+            { test: /\.css$/, loader: "style!css" },
+            { test: /\.json$/, loader: "json" }
         ]
     }
 };
