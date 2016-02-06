@@ -25,9 +25,10 @@
     "web3": "*"
   },
   "devDependencies": {
-    "css-loader": "^0.23.1",
-    "json-loader": "^0.5.4",
-    "style-loader": "^0.13.0",
+    "css-loader": "*",
+    "json-loader": "*",
+    "style-loader": "*",
+    "solidity-loader": "*",
     "webpack": "*",
     "webpack-dev-server": "*"
   }
