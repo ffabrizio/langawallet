@@ -1,0 +1,14 @@
+<head>
+  <title>wallet</title>
+</head>
+
+<body>
+  <h1>My Wallet</h1>
+
+  {{> wallet}}
+</body>
+
+<template name="wallet">
+  <p>Address: {{ account.address }}</p>
+  <p>Balance: {{ account.tokenBalance }}</p>
+</template>
