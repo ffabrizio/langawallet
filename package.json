@@ -22,13 +22,12 @@
   },
   "homepage": "https://github.com/ffabrizio/langawallet#readme",
   "dependencies": {
-    "web3": "*"
+    "web3": "*",
+    "solc": "*"
   },
   "devDependencies": {
-    "css-loader": "*",
+    "fs": "*",
     "json-loader": "*",
-    "style-loader": "*",
-    "solidity-loader": "*",
     "webpack": "*",
     "webpack-dev-server": "*"
   }
