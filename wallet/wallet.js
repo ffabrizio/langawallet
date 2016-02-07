@@ -4,17 +4,18 @@
 /* global Session */
 /* global Meteor */
 
-const token_address = '0xa3b66e4f316959326adbf73554202da99216dcf9';
-
 if (Meteor.isClient) {
+    const token = Token.at('0xa3b66e4f316959326adbf73554202da99216dcf9');
+    let coinbase = web3.eth.coinbase;
+
     Template.wallet.helpers({
         account: {
-            address: web3.eth.coinbase,
+            address: coinbase,
             etherBalance: function() {
-                return web3.eth.getBalance(web3.eth.coinbase);
+                return web3.eth.getBalance(coinbase);
             },
             tokenBalance : function() {
-                return Token.at(token_address).balanceOf(web3.eth.coinbase);
+                return token.balanceOf(coinbase);
             }
         }
     });
