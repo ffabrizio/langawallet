@@ -1,3 +1,4 @@
+/* global web3 */
 /* global Token */
 /* global Template */
 /* global Session */
@@ -6,9 +7,6 @@
 const token_address = '0xa3b66e4f316959326adbf73554202da99216dcf9';
 
 if (Meteor.isClient) {
-    // counter starts at 0
-    Session.setDefault('balance', 0);
-
     Template.wallet.helpers({
         account: {
             address: web3.eth.coinbase,
