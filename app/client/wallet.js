@@ -12,12 +12,17 @@ if (Meteor.isClient) {
 
   Template.wallet.helpers({
     account: {
-      address: coinbase,
+      address: coinbase.substring(0, 10),
+      hash: function() {
+        return coinbase.substring(2);
+      },
       etherBalance: function() {
-        return web3.eth.getBalance(coinbase);
+        let balance = web3.eth.getBalance(coinbase);
+        return balance;
       },
       tokenBalance : function() {
-        return token.balanceOf(coinbase);
+        let balance = token.balanceOf(coinbase);
+        return balance;
       }
     }
   });
