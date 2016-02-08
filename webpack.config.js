@@ -9,7 +9,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.json$/, loader: "json" },
-            { test: /\.sol/, loader: "./../contracts/loader.js" }
+            //{ test: /\.sol/, loader: "./../contracts/loader.js" }
         ]
     }
 };

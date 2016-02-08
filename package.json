@@ -26,7 +26,6 @@
     "solc": "*"
   },
   "devDependencies": {
-    "fs": "*",
     "json-loader": "*",
     "webpack": "*",
     "webpack-dev-server": "*"
