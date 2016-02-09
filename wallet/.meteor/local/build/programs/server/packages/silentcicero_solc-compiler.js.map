@@ -1,0 +1,1 @@
+{"version":3,"sources":["meteor://💻app/packages/silentcicero_solc-compiler/package-init.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA;AACA;AACA;AACA;AACA,yF","file":"/packages/silentcicero_solc-compiler.js","sourcesContent":["// Node environment\nif(typeof global !== 'undefined') {\n    solc = (typeof global.solc !== 'undefined') ? global.solc : Npm.require('solc');\n}\n"]}
