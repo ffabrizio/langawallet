@@ -1,3 +1,4 @@
+/* global blockies */
 /* global web3 */
 /* global Token */
 /* global Template */
@@ -13,6 +14,9 @@ if (Meteor.isClient) {
   Template.wallet.helpers({
     account: {
       address: coinbase.substring(0, 10),
+      blockie: function() {
+        return blockies.create({ seed: coinbase }).toDataURL()
+      },
       hash: function() {
         return coinbase.substring(2);
       },

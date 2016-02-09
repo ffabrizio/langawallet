@@ -2,11 +2,11 @@
 
 <template name="wallet">
   <p>
-    <canvas width="80" height="80" data-jdenticon-hash="{{ account.hash }}"></canvas>
+    <canvas height="50" width="50" style="margin: 10px; background:url('{{account.blockie}}')"></canvas>
     <span class="address">{{ account.address }} ...</span>
   </p>
   <p>
     <img src="sun.png" width="80" />
-   {{ account.tokenBalance }}
+    {{ account.tokenBalance }}
   </p>
 </template>
