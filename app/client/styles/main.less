@@ -1,5 +1,5 @@
 // libs
-//@import '{ethereum:dapp-styles}/dapp-styles.less';
+@import '{ethereum:dapp-styles}/dapp-styles.less';
 @import 'elements.import.less';
 
 
@@ -27,6 +27,14 @@
 @colorLinuxBackgroundFocus: #403F3A;
 @colorLinuxBackgroundBlur: #3C3B36;
 
+.langasmall {
+  color: @colorLink;
+  font-size: 1rem;
+}
+.langabig {
+  color: @colorLink;
+  font-size: 3rem;
+}
 
 .global-notifications {
     position: fixed;
@@ -58,6 +66,7 @@
         > h2 + p {
             margin-bottom: @gridHeight * 2;
         } 
+        
     }   
 }
 

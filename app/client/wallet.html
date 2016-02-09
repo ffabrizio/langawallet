@@ -1,12 +1,10 @@
 
 
 <template name="wallet">
-  <p>
-    <canvas height="50" width="50" style="margin: 10px; background:url('{{account.blockie}}')"></canvas>
-    <span class="address">{{ account.address }} ...</span>
-  </p>
-  <p>
-    <img src="sun.png" width="80" />
-    {{ account.tokenBalance }}
-  </p>
+  <div class="dapp-content">
+    <img height="50" width="50" src="{{account.blockie}}" />
+    <h3 class="langasmall">{{ account.address }} ...</h3>
+    <img src="sun.png" height="50" width="50" />
+    <h3 class="langabig">{{ account.tokenBalance }}</h3>
+  </div>
 </template>
