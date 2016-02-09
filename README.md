@@ -1,3 +1,3 @@
 # langawallet
 
-## an experimental Ξthereum wallet
+## An experimental Ξthereum ÐAPP
