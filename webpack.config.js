@@ -4,12 +4,11 @@ module.exports = {
     entry: "./app/index.js",
     output: {
         path: __dirname,
-        filename: "dist/app.js"
+        filename: "dist/dapp.js"
     },
     module: {
         loaders: [
-            { test: /\.json$/, loader: "json" },
-            //{ test: /\.sol/, loader: "./../contracts/loader.js" }
+            { test: /\.json$/, loader: "json" }
         ]
     }
 };
